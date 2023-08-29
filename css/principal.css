@@ -105,3 +105,10 @@ Trabalhando com a página curiosidades
     width: 470px;
     padding: 61px 400px 61px 100px;
 }
+
+#curiosidades figcaption {
+    background-color: #c0262c;
+    padding: 10px 10px;
+    color: white;
+    font-size: 1.5em;
+}
