@@ -68,6 +68,9 @@ h1 {
     font-family: Roboto Extrabold;
     color:#c0262c;
     font-size:2.5em;
+    border-bottom: #c0262c solid thin;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -141,9 +144,56 @@ Trabalhando com a página curiosidades
 }
 
 #curiosidades ol {
-
+    list-style-type: none;
+    white-space: pre;
+    line-height: 0.9em;
+    /* Nome da variável*/
+    counter-reset: contador;
 }
 
 #curiosidades ol li::before {
-    
+    color: #999;
+    counter-increment: contador;
+    content: "Questão "counter(contador)" \00BB ";
+}
+
+#curiosidades ul li a {
+    text-decoration: none;
+    color: #c0262c;
+    font-family: Roboto Extrabold;
+    padding: 10px;
+}
+
+#curiosidades ul li a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.8);
+} 
+
+#curiosidades dd p a[target="_blank"] {
+    text-decoration: none;
+    color: #c0262c;
+    font-variant: normal;
+    font-style: normal;
+    font-family: Roboto Extrabold;
+    padding: 10px;
+    display: inline-block;
+}
+
+#curiosidades dd p a[target="_blank"]:hover {
+    text-decoration: none;
+}
+
+#curiosidades dd p a[href="#topo"] {
+    background: url(/imagens/seta-voltar.png) no-repeat left center;
+    text-decoration: none;
+    color: #c0262c;
+    font-variant: normal;
+    font-style: normal;
+    font-family: Roboto Extrabold;
+    padding: 10px 0 10px 30px ;
+
+}
+
+#curiosidades dd p a[href="#topo"]:hover {
+    background: url(/imagens/seta-voltar-hover.png) no-repeat left center;
 }
