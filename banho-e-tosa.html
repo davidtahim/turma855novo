@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/principal.css">
 </head>
 
-<body>
+<body id="banhoetosa">
 <p><a href="index.html" target="_self">Home</a></p>
 <h1> Agendamento para banho e tosa </h1>
 <h2> Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
@@ -15,26 +15,22 @@
 
 <fieldset id="ident_dono">
     <legend>Dados do Dono</legend>
-    <p><label for="nome_dono">Nome:</label> <input type="text" name="nome_dono" id="nome_dono" size = "80" maxlength="100" placeholder="Digite o nome completo do dono do animal"/></p>
-    
-    <p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size = "80" maxlength="60" placeholder="Digite o endereço"/></p>
-    
-    <p><label for="cep">CEP:</label> <input type="text" name="cep" id="cep"  size = "10" maxlength="9"  placeholder="XXXXX-XXX"/></p>
-    
-    <p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono" size = "80" maxlength="60"  placeholder="Digite o endereço de email"> </p> 
-    
-    <p><label for="tel_dono">Tel/Cel:</label> <input type="text" name="tel_dono" id="tel_dono" size = "12" maxlength="13" placeholder="99 99999-9999"/></p>
+       <p><label for="nome_dono">Nome:</label> <input type="text" name="nome_dono" id="nome_dono" size = "80" maxlength="100" placeholder="Digite o nome completo do dono do animal"/></p>
+       <p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size = "80" maxlength="60" placeholder="Digite o endereço"/></p>
+       <p><label for="cep">CEP:</label> <input type="text" name="cep" id="cep"  size = "10" maxlength="9"  placeholder="XXXXX-XXX"/></p>
+       <p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono" size = "80" maxlength="60"  placeholder="Digite o endereço de email"/></p>
+       <p><label for="tel_dono">Tel/Cel:</label> <input type="text" name="tel_dono" id="tel_dono" size = "12" maxlength="13" placeholder="99 99999-9999"/></p>
     
 </fieldset>
 <fieldset>
     <legend>Dados do bichinho</legend>
-    <p><label for="nome_animal">Nome:</label> <input type="text" name="nome_animal" id="nome_animal"  size = "25" maxlength="40"  placeholder="Digite o nome do animal"/></p>
-    <p>Porte do cão:
+    <p class="labelsimples"><label for="nome_animal">Nome:</label> <input type="text" name="nome_animal" id="nome_animal"  size = "25" maxlength="40"  placeholder="Digite o nome do animal"/></p>
+    <p class="labelsimples">Porte do cão:
         <input type="radio" name="porte_animal" id="animal_pequeno" value="animal_pequeno">Pequeno
         <input type="radio" name="porte_animal" id="animal_medio" value="animal_medio">Médio
         <input type="radio" name="porte_animal" id="animal_grande" value="animal_grande">Grande
     </p>
-    <p>
+    <p class="labelsimples">
         Tipo de tosa:
         <select name="tipo_tosa" id="tipo_tosa">
             <option value="">Nenhuma</option>
@@ -53,7 +49,7 @@
 </fieldset>
 <fieldset id="ident_marcacao">
     <legend>Horário (não atendemos as segundas e domingos)</legend>
-    <p>
+    <p class="labelsimples">
         Indique seu horário
             <input type="checkbox" name="semana" id="idterca">Terça-Feira
             <input type="checkbox" name="semana" id="idquarta">Quarta-Feira
@@ -61,11 +57,11 @@
             <input type="checkbox" name="semana" id="idsexta">Sexta-Feira
             <input type="checkbox" name="semana" id="idsabado">Sábado
     </p>
-    <p>
+    <p class="labelsimples">
         Primeira opção de horário
         <input type="datetime-local" name="pdata" id="pdata">
     </p>
-    <p>
+    <p class="labelsimples">
         Segunda opção de horário
         <input type="datetime-local" name="sdata" id="sdata">
     </p>

@@ -271,18 +271,18 @@ input#nome, input#email {
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: #999;
     font-style: italic;
     font-size: 0,8em;font-family: Roboto Extrabold;
 } 
 :-ms-input-placeholder {
-    color: #fff;
+    color: #999;
     font-style: italic;
     font-size: 0,8em;font-family: Roboto Extrabold;
 }
 
 :-moz-placeholder {
-    color: #fff;
+    color: #999;
     font-style: italic;
     font-size: 0,8em;font-family: Roboto Extrabold;
 }
@@ -291,4 +291,67 @@ label {
     margin-top: 10px;
     float: left;
     width: 60px;
+}
+
+/* Página de Formulário Banho e Tosa */
+
+#banhoetosa fieldset {
+    background-color: white;
+    border: none;
+    border-radius: 0 15px;
+    margin-bottom: 20px;
+}
+
+#banhoetosa fieldset legend {
+    background-color: #c0262c;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding: 10px;
+    margin-left: -13px;
+    font-family: Robot Extrabold;
+}
+
+#banhoetosa fieldset p {
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#banhoetosa fieldset label {
+    display: block;
+    margin-top: 10px;
+    float: left;
+    width: 115px;
+}
+
+#banhoetosa fieldset input[type="text"] {
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #000;
+    width: 770px;
+
+}
+#banhoetosa fieldset input[type="email"] {
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #000;
+    width: 770px;
+}
+
+#banhoetosa fieldset textarea {
+    width: 770px;
+    height: 100px;
+    resize: none;
+    font-size: 1.2em;
+    border: #000 solid 1px;
+}
+
+#banhoetosa fieldset textarea:-moz-placeholder {
+    color: #999;
+}
+#banhoetosa fieldset p.labelsimples {
+    float: none !important;
 }
