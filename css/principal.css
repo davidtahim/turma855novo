@@ -316,6 +316,7 @@ label {
     float: left;
     padding-left: 20px;
     padding-bottom: 10px;
+    margin: 10px 0 10px 0;
 }
 
 #banhoetosa fieldset label {
@@ -323,6 +324,11 @@ label {
     margin-top: 10px;
     float: left;
     width: 115px;
+    font-size: 1.2em;
+    font-variant: normal;
+    font-weight:400;
+    font-style:normal;
+    font-family: Roboto Regular;
 }
 
 #banhoetosa fieldset input[type="text"] {
@@ -354,4 +360,25 @@ label {
 }
 #banhoetosa fieldset p.labelsimples {
     float: none !important;
+}
+
+#banhoetosa p::first-line {
+    display: block;
+    font-size: 1.2em;
+    font-variant: normal;
+    font-weight:400;
+    font-style:normal;
+    font-family: Roboto Regular;
+}
+
+#banhoetosa main h2 {
+    background: #fef84f url(/imagens/postit.jpg) no-repeat top left;
+    color: #000;
+    padding: 35px;
+    width: 207px;
+    height: 115px;
+    font-size: 1.3em;
+    letter-spacing: 0.07em;
+    font-family: Roboto Extrabold;
+    line-height: 1.2em;
 }
