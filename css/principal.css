@@ -392,3 +392,65 @@ label {
     border: #c0262c thin solid;
     background-color: white;
 }
+
+/* Trabalhando a estrutura do site */
+
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1 {
+    width: 240px;
+    float: left;
+    background-image: url(/imagens/meu-amigo-cao-petshop-header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    border: none;
+    text-indent: -1000px;
+    font-size: 0;
+    margin-bottom: 0;
+    display: block;
+}
+header #anuncio {
+    width: 510px;
+    float: left;
+    margin: 80px auto auto;
+    padding-top: 0px;
+}
+
+header section {
+    padding-top: 70px;
+}
+header section a[href="boletim.html"] {
+    border: #c0262c solid thin;
+    padding: 15px;
+    border-radius: 10px;
+    color: #c0262c;
+    text-decoration: none;
+    font-variant: all-small-caps;
+    font-style: normal;
+    font-size: 1em;
+}
+
+header section p {
+    color: #999;
+    margin: 30px auto 10px;
+    font-style: normal;
+    font-variant: all-small-caps;
+}
+header section figure {
+    width: 100%;
+    margin: 0px;
+}
+header section figure a {
+    padding: 25px 5px 0;
+    border: none;
+}
+header section figure a:first-child {
+    padding: 25px 5px 0 0;
+}
+header section figure a:last-child {
+    padding: 25px 0 0 5px;
+}
