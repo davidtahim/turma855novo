@@ -645,3 +645,50 @@ footer p a:hover {
     right: -20px;
     transform: rotate(30deg);
 }
+
+/* Animações da Index */ 
+
+.anuncioanime {
+    margin: 0 0 10px;
+    padding: 0;   
+    overflow: auto;
+}
+
+.anuncioanime .boxanuncio {
+    width: 163px;
+    height: 230px;
+    border-bottom: #c0262c thin solid;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.anuncioanime .boxanuncio p {
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.3em;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    border-left: #c0262c thin solid;
+    border-right: #c0262c thin solid;
+    padding: 7px 15px;
+    bottom: -80px;
+    left: 0;
+    transition: linear 1s 0.1s; 
+    cursor:default;
+}
+
+.anuncioanime .boxanuncio p::first-line {
+    font-size: 1.1em;
+    font-variant: inherit;
+    font-style: normal;
+    font-weight: bolder;
+    color: #c0262c;
+    padding: 0;
+
+}
+
+.anuncioanime .boxanuncio p:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 0px;
+}
