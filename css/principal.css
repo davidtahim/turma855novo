@@ -701,3 +701,13 @@ footer p a:hover {
 audio::-webkit-media-controls-panel {
     background-color:#c0262c;
   }
+
+  /* Controles do Vídeo */
+
+  aside video {
+    width: 190px;
+    border: #c0262c thin solid;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
