@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php"); // Redirecionar para a página de login se não estiver autenticado
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +13,8 @@
     <title>Bem Vindo ao sistema do PetShop</title>
 </head>
 <body>
-    
+ 
+
+
 </body>
 </html>
