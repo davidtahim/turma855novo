@@ -18,11 +18,11 @@
 		?>
 		<h2>Esse espaço é do conteúdo</h2>				
 
-			<footer class="footer">
+			
 			<?php
 				include 'parts/footer.php';
 			?>
-			</footer>
+			
 		</div>
 	</div> 
 
