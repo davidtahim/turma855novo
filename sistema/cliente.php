@@ -27,13 +27,19 @@
                                 </div>
                                 <div class="card-body">
                                     <form action="scripts/cadastrocliente.php" method="post">
-                                       <div class="mb-5">
-                                       	 <label for="nome" class="form-label">Nome Completo</label>
-										 <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
-                                       </div>
+                                        <div class="mb-3">
+                                            <label for="nome" class="form-label">Nome Completo</label>
+                                            <input type="text" class="form-control" name="nome" id="nome"
+                                                placeholder="Digite seu nome" autocomplete="off" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">E-mail</label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="Digite seu e-mail" autocomplete="off" required>
+                                        </div> 
                                     </form>
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
                                 </div>
                             </div>
                         </div>
